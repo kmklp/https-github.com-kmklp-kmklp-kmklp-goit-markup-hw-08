@@ -679,10 +679,52 @@ background-color: #FFFFFF;
 .btn-close-icon{
 width: 18px;
 height: 18px;
- 
+ }
 
+     /*створюю стилі для Форм*/
+.form{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.text-form{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: calc(23 / 20);
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+padding-top: 40px;
+padding-bottom: 30px;
+}
+
+.label-position{
+  display: flex;
+flex-direction: column;
+}
+
+.name-input{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.field{
+  box-sizing: border-box;
+width: 448px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 
 }
+
 
      /*СТИЛІ ДЛЯ ПОРТФОЛІО*/
 
