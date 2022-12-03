@@ -706,6 +706,10 @@ padding-bottom: 30px;
 .label-position{
   display: flex;
 flex-direction: column;
+margin-bottom: 10px;
+}
+.label-position:not( :last-child){
+margin-bottom: 10px;
 }
 
 .name-input{
@@ -720,9 +724,24 @@ flex-direction: column;
 .field{
   box-sizing: border-box;
 width: 448px;
+height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-
+}
+.icon-form{
+position: absolute;
+top:120px;
+left: 55px;
+}
+.icon-tel{
+  position: absolute;
+  top:185px;
+  left: 55px;
+}
+.icon-email{
+  position: absolute;
+  top:248px;
+  left: 55px;
 }
 
 
@@ -744,11 +763,6 @@ border-radius: 4px;
    transition-property: background-color,box-shadov,transform;
     transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
-
-
-  
-  
-  
 }
 
 .btn-link:not(:last-child){

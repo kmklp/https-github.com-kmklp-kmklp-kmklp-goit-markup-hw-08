@@ -444,14 +444,30 @@
        
              </svg>
             </button> 
-                  <!--Створюю форми модального вікна-->
+                  <!--Створюю форми модального вікна--> 
+                  <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
             <form >
                 <div class="form">
-                  <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
-                  <label class="label-position">
-                    <span class="name-input">Ім'я</span>
-                    <input class="field">
-                     
+                   <label class="label-position">
+                     <span class="name-input">Ім'я</span>
+                     <input class="field" type="text" name="user_name">
+                      <svg class="icon-form" width="12" height="12">
+                        <use href="./img/icons/icomoon-close-modal/symbol-defs.svg#icon-Vector-1"></use>
+                     </svg>
+                   </label>
+                   <label class="label-position">
+                     <span class="name-input">Телефон</span>
+                     <input class="field" type="tel" name="tel">
+                     <svg class="icon-tel" width="12" height="12">
+                       <use href="./img/icons/icomoon-close-modal/symbol-defs.svg#icon-Vector-2"></use>
+                    </svg>
+                   </label>
+                   <label class="label-position">
+                    <span class="name-input">Пошта</span>
+                    <input class="field" type="email" name="email">
+                    <svg class="icon-email" width="12" height="12">
+                      <use href="./img/icons/icomoon-close-modal/symbol-defs.svg#icon-Vector-3"></use>
+                   </svg>
                   </label>
                 </div>
             </form>
