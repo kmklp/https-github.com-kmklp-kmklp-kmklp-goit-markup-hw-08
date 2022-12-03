@@ -626,6 +626,62 @@ color: #FFFFFF;
   flex-direction: column;
 
   }
+                            /*Форми у футері*/
+  .form-footer{
+  display: flex;
+  flex-direction: column;
+  margin-right: 93px;
+  }
+  .form-position{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .label-footer{
+  box-sizing: border-box;
+ margin-right: 40px;
+  }
+  .input-footer{
+  width:358px;
+  height: 50px;
+  display: flex;
+ align-items: center;
+ padding-left: 18px;
+  
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(20 / 16);
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+  }
+.btn-form-footer{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+color: #FFFFFF;
+letter-spacing: 0.06em;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+display: flex;
+align-items: center;
+text-align: center;
+padding-right: 62px;
+padding-top: 10px;
+padding-left: 28px;
+padding-bottom: 10px;
+}
+
+
            /*Mодальне вікно*/
   .backdrop{
   position: fixed;
@@ -723,18 +779,22 @@ margin-bottom: 10px;
 border-radius: 4px;
 width: 448px;
 height: 40px;
+color:#757575;
 }
  /*дадав ховер та фокус*/
- .form-hover:hover,
- .form-hover:focus{
-  color:#2196F3;
+ .field:hover,
+ .field:focus,
+ .icon-form:hover
+ .icon-form:focus{
+  color: #2196f3;
   border-color: #2196F3;
-}
+  }
 
 .icon-form{
 position: absolute;
 top:28px;
 left:14px;
+fill:#212121;
 }
 .label-textarea{
   display: flex;
@@ -764,6 +824,7 @@ font-size: 12px;
 line-height: calc(14 / 12);
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
+
 }
     /* нИЗ форми*/
 .form-flex{
@@ -780,8 +841,16 @@ margin-bottom: 30px;
 .checkbox{
 display: flex;
 margin-right: 9px;
-
+width:16px;
+height: 15px;
+background: #FFFFFF;
+border: 0.2px solid #FFFFFF;
 }
+.checkbox:hover{
+  color: #2196F3;
+  border-radius: 2px;
+}
+
 .text-contract{
   display: flex;
   margin-right: 9px;
@@ -816,6 +885,11 @@ color: #2196F3
   align-items: center;
   text-align: center;
   padding: 10px 52px;
+}
+.btn-submit:hover{
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
  
      /*СТИЛІ ДЛЯ ПОРТФОЛІО*/
