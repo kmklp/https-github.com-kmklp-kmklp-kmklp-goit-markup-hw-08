@@ -702,17 +702,12 @@ color: #212121;
 padding-top: 40px;
 padding-bottom: 30px;
 }
-
 .label-position{
   display: flex;
 flex-direction: column;
 position: relative;
 margin-bottom: 10px;
-
-
- }
-
-
+}
 .name-input{
   font-family: 'Roboto';
   font-style: normal;
@@ -729,6 +724,13 @@ border-radius: 4px;
 width: 448px;
 height: 40px;
 }
+ /*дадав ховер та фокус*/
+ .form-hover:hover,
+ .form-hover:focus{
+  color:#2196F3;
+  border-color: #2196F3;
+}
+
 .icon-form{
 position: absolute;
 top:28px;
@@ -747,11 +749,13 @@ flex-direction: column;
   border-radius: 4px;
   width: 448px;
   height: 120px;
+  margin-bottom: 20px;
 }
 .field-textarea{
 resize: none;
 width: 416px;
 height: 96px;
+
 border: none;
 font-family: 'Roboto';
 font-style: normal;
@@ -761,9 +765,59 @@ line-height: calc(14 / 12);
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
+    /* нИЗ форми*/
+.form-flex{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.label-contract{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+}
+.checkbox{
+display: flex;
+margin-right: 9px;
 
+}
+.text-contract{
+  display: flex;
+  margin-right: 9px;
 
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(24 / 14);
+letter-spacing: 0.03em;
+color: #757575;
+}
+.contract{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(24 / 14);
+letter-spacing: 0.03em;
+color: #2196F3
+}
+.btn-submit{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 52px;
+}
+ 
      /*СТИЛІ ДЛЯ ПОРТФОЛІО*/
 
     /*Стилізація кнопок*/

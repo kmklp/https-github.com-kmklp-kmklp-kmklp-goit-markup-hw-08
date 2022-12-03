@@ -448,21 +448,24 @@
                   <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
             <form >
                 <div class="form">
-                   <label class="label-position">
+                    
+                   <label class="label-position link">
                      <span class="name-input">Ім'я</span>
-                     <input class="field" type="text" name="user_name">
+                     <a href="">
+                     <input class="field " type="text" name="user_name">
                       <svg class="icon-form" width="12" height="12">
                         <use href="./img/icons/icomoon-close-modal/symbol-defs.svg#icon-Vector-1"></use>
                      </svg>
+                    </a>
                    </label>
-                   <label class="label-position">
+                   <label class="label-position link">
                      <span class="name-input">Телефон</span>
                      <input class="field" type="tel" name="tel">
                      <svg class="icon-form" width="12" height="12">
                        <use href="./img/icons/icomoon-close-modal/symbol-defs.svg#icon-Vector-2"></use>
                     </svg>
                    </label>
-                   <label class="label-position">
+                   <label class="label-position link">
                     <span class="name-input">Пошта</span>
                     <input class="field" type="email" name="email">
                     <svg class="icon-form" width="12" height="12">
@@ -477,10 +480,15 @@
                 </label>
                 </div>
             </form>
-            <form>
-                <label class="">
-                    <input class="">
+            <form class="form-flex">
+                <div class="label-contract">
+                <label >
+                    <input class="checkbox" type="checkbox" name="contract">
                 </label>
+                <p class="text-contract">Погоджуюся з розсилкою та приймаю</p>
+                <a href=""> <span class="contract">Умови договору</span></a>
+               </div>
+                <button class="btn-submit" type="submit">Відправити</button>
             </form>
         </div>
     </div>
