@@ -706,11 +706,12 @@ padding-bottom: 30px;
 .label-position{
   display: flex;
 flex-direction: column;
+position: relative;
 margin-bottom: 10px;
-}
-.label-position:not( :last-child){
-margin-bottom: 10px;
-}
+
+
+ }
+
 
 .name-input{
   font-family: 'Roboto';
@@ -723,26 +724,44 @@ margin-bottom: 10px;
 }
 .field{
   box-sizing: border-box;
+ border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 width: 448px;
 height: 40px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
 }
 .icon-form{
 position: absolute;
-top:120px;
-left: 55px;
+top:28px;
+left:14px;
 }
-.icon-tel{
-  position: absolute;
-  top:185px;
-  left: 55px;
+.label-textarea{
+  display: flex;
+flex-direction: column;
+
 }
-.icon-email{
-  position: absolute;
-  top:248px;
-  left: 55px;
+.box-textarea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
 }
+.field-textarea{
+resize: none;
+width: 416px;
+height: 96px;
+border: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: calc(14 / 12);
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+}
+
 
 
      /*СТИЛІ ДЛЯ ПОРТФОЛІО*/
