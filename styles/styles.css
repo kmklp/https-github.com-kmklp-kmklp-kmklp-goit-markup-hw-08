@@ -841,28 +841,27 @@ color: rgba(117, 117, 117, 0.5);
 
 }
     /* нИЗ форми*/
-.form-flex{
-display: flex;
-align-items: center;
-flex-direction: column;
+.form-bottom{
+
 }
 .label-contract{
+
+margin-bottom: 30px;
+}
+.checkbox{
+appearance: none;
+}
+.position-elements{
 display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 30px;
 }
-.checkbox{
+.position-block{
 display: flex;
-margin-right: 9px;
-width:16px;
-height: 15px;
-background: #FFFFFF;
-border: 0.2px solid #FFFFFF;
-}
-.checkbox:hover{
-  color: #2196F3;
-  border-radius: 2px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .text-contract{
