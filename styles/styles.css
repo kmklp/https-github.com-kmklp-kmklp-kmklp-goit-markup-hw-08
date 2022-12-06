@@ -803,11 +803,10 @@ height: 40px;
 color:#757575;
 padding-left: 40px;
 }
- /*дадав ховер та фокус*/
- .field:focus + .icon-form{
-  fill: #2196f3;
-  border-color: #2196F3;
-  }
+.field:focus + .icon-form{
+border-color:#2196F3;
+fill:#2196F3;
+}
 
 .icon-form{
 position: absolute;
@@ -835,6 +834,7 @@ resize: none;
 width: 416px;
 height: 96px;
 
+box-sizing:border-box;
 border: none;
 font-family: 'Roboto';
 font-style: normal;
@@ -905,6 +905,8 @@ color: #2196F3
   text-align: center;
   padding: 10px 52px;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 .btn-submit:hover{
   background: #2196F3;
