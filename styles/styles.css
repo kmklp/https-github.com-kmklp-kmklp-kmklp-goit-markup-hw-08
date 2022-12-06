@@ -656,6 +656,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: calc(20 / 16);
 letter-spacing: 0.03em;
+color:#757575;
 
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -674,6 +675,7 @@ letter-spacing: 0.06em;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+border: none;
 
 position: relative;
 display: flex;
@@ -745,6 +747,8 @@ padding:0;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 background-color: #FFFFFF;
+transition-duration:250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close:hover,
 .btn-close:focus{
@@ -802,6 +806,8 @@ width: 448px;
 height: 40px;
 color:#757575;
 padding-left: 40px;
+transition-duration:250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field:focus + .icon-form{
 border-color:#2196F3;
@@ -813,6 +819,8 @@ position: absolute;
 top:28px;
 left:14px;
 fill:#212121;
+transition-duration:250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-textarea{
   display: flex;
@@ -843,18 +851,26 @@ font-size: 12px;
 line-height: calc(14 / 12);
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
-
 }
+
     /* нИЗ форми*/
-.form-bottom{
 
-}
 .label-contract{
 
 margin-bottom: 30px;
 }
 .checkbox{
 appearance: none;
+}
+.icon-check{
+display: inline-block;
+width:16px;
+height:15px;
+background: #2196F3;
+border-radius: 2px;
+}
+.checkbox:checked + .icon-check{
+background-image: url(../img/icons/icon\ check.svg);
 }
 .position-elements{
 display: flex;
@@ -872,6 +888,7 @@ flex-direction: column;
 .text-contract{
   display: flex;
   margin-right: 9px;
+  margin-left: 7px;
 
   font-family: 'Roboto';
 font-style: normal;
@@ -907,6 +924,8 @@ color: #2196F3
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-submit:hover{
   background: #2196F3;
