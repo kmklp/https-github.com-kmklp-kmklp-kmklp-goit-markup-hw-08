@@ -812,10 +812,11 @@ transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field:focus{
-  border: 1px solid #2196F3;
+  outline: 1px solid #2196F3;
+ border: transparent;
   
 }
-.icon-form:focus{
+.field:focus + .icon-form{
 fill:#2196F3;
 }
 
@@ -839,7 +840,6 @@ padding: 12px 16px;
 resize: none;
 
 box-sizing:border-box;
-border: none;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -850,10 +850,15 @@ color: rgba(117, 117, 117, 0.5);
 border: 1px solid rgba(33, 33, 33, 0.2);
 width: 448px;
 height: 120px;
+margin-bottom: 20px;
+border-radius: 4px;
+transition-duration:250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .field-textaria:focus{
-
+outline: 1px solid #2196F3;
+border:transparent;
 }
 
     /* нИЗ форми*/
