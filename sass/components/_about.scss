@@ -1,0 +1,64 @@
+.about{
+
+    display: flex;
+    }
+    
+    .about_list{
+    display: flex;
+    align-items: flex-start;
+    gap:30px;
+    padding-left: 0px;
+    }
+    
+    .section_about{
+    padding-top: 94px;
+    padding-bottom: 0px;
+    }
+    
+    .about_content{
+    
+    padding-left: 0px;
+    }
+    
+    
+    
+    .about_header_content:last-child{
+        margin-right: 0px;
+      }
+    
+    .abuot_title{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      
+      color: #212121;
+    }
+    
+    .about_advanteg_our{
+      font-size: 14px;
+      line-height: calc(24 / 14);
+       letter-spacing: 0.03em;
+      color: #757575;
+    }
+    
+    .about_header{
+      margin-bottom:10px;
+    }
+         /* Робота з іконами :) */
+    .about_icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      background: #F5F4FA;
+    border-radius: 4px;
+    }
+    .about_icon_fill{
+    width: 70px;
+    height: 70px;
+    }
+    

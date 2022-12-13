@@ -364,7 +364,7 @@ height: 70px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.work_title{
+  .work_title{
   display:flex;
   margin-bottom: 50px;
   justify-content: center;
@@ -385,14 +385,15 @@ justify-content: space-between;
 margin-top: 50px;
 padding-left: 0px;
 }
-     /*Робота з текст з фоном спозиційований поверх зображення*/
+
 .work_img{
   display:flex;
   justify-content: center;
   align-items:flex-end;
-
-  
 }
+
+     /*Робота з текст з фоном спозиційований поверх зображення*/
+
 
 .work_text{
 
