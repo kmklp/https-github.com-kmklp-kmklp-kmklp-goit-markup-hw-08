@@ -289,7 +289,7 @@ background-size: cover;
 }
 
  
-    /*Робота з другою секцією*/
+    /*Робота з другою секцією _ABOUT*/
     /*розмітка*/
 .about{
 
@@ -357,27 +357,14 @@ height: 70px;
   
 
 
-    /*третя секція Img чим ми займаємось*/
+    /*третя секція Img чим ми займаємось _WORK*/
     /*розмітка третьої секції*/
 .work{
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-  .work_title{
-  display:flex;
-  margin-bottom: 50px;
-  justify-content: center;
-
-  font-family:var(--second-font);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
   
-  color:var(--colorfont-section-title);
-}
 
 .work_list{
 display: flex;
@@ -513,6 +500,22 @@ gap:10px;
 }
 
      /*Додав секцію та ікони - Постійні клієнти*/
+
+     .section-title{
+      display:flex;
+      margin-bottom: 50px;
+      justify-content: center;
+    
+      font-family:var(--second-font);
+      font-weight: 700;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      text-align: center;
+      letter-spacing: 0.03em;
+      
+      color:var(--colorfont-section-title);
+    } 
+
 .client-distance{
  gap:30px;
 }
