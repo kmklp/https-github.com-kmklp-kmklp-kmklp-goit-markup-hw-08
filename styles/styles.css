@@ -359,8 +359,12 @@ height: 70px;
 
     /*третя секція Img чим ми займаємось*/
     /*розмітка третьої секції*/
-
-.section-title{
+.work{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.work_title{
   display:flex;
   margin-bottom: 50px;
   justify-content: center;
@@ -375,14 +379,14 @@ height: 70px;
   color:var(--colorfont-section-title);
 }
 
-.list-img{
+.work_list{
 display: flex;
 justify-content: space-between;
 margin-top: 50px;
 padding-left: 0px;
 }
      /*Робота з текст з фоном спозиційований поверх зображення*/
-.box-img{
+.work_img{
   display:flex;
   justify-content: center;
   align-items:flex-end;
@@ -390,7 +394,7 @@ padding-left: 0px;
   
 }
 
-.text-img{
+.work_text{
 
   display: flex;
   align-items: center;
