@@ -410,6 +410,11 @@ color: #FFFFFF;
 
       /*четверта секция-наши сотрудники(section-employees)*/
       /*розмітка четвертої секції*/
+.employees{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  }
 .employees-title{
 display: flex;
 align-items: center;
@@ -438,7 +443,7 @@ justify-content: space-between;
       
       color: #212121;
 }
-.employees{
+.employees-our{
   display: flex;
   justify-content: space-around;
   
@@ -501,7 +506,7 @@ gap:10px;
 
      /*Додав секцію та ікони - Постійні клієнти*/
 
-     .section-title{
+     .section_title{
       display:flex;
       margin-bottom: 50px;
       justify-content: center;
