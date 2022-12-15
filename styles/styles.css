@@ -415,20 +415,20 @@ color: #FFFFFF;
   margin: 0 auto;
   padding: 0 15px;
   }
-.employees-title{
+.employees_title{
 display: flex;
 align-items: center;
 margin-bottom: 50px;
 }
 
-.employees-img{
+.employees_img{
 display: flex;
 justify-content: space-between;
 }
 .section-fourth{
  background:var(--section-fon-third) ;
 }
-.title-employees{
+.employees_title{
       display: flex;
       justify-content: space-around;
       margin-bottom: 10px;
