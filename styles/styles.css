@@ -425,7 +425,7 @@ margin-bottom: 50px;
 display: flex;
 justify-content: space-between;
 }
-.section-fourth{
+.section_fourth{
  background:var(--section-fon-third) ;
 }
 .employees_title{
@@ -443,7 +443,7 @@ justify-content: space-between;
       
       color: #212121;
 }
-.employees-our{
+.employees_our{
   display: flex;
   justify-content: space-around;
   
@@ -457,20 +457,20 @@ justify-content: space-between;
   color: #757575;
 }
 
-.employees-distance{
+.employees_distance{
  padding-top: 30px;
  padding-bottom: 30px;
  background: #FFFFFF;
  border-radius: 0px 0px 4px 4px;
 }
     /*Робота з іконами :)*/
-.list-icons{
+.employees_list{
  display:flex;
  justify-content: center;
  margin-top: 16px;
  
 }
-.employees-link{
+.employees_link{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -481,25 +481,25 @@ background-color: #FFFFFF;
 border-radius: 50%;
 transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+ &_link:hover
+ &_link:focus{
+  color:#FFFFFF;
+  background-color: #2196f3;
+  }
+
 }
-.icon-card{
+.employees--icon-card{
   fill:currentColor;
   }
                     /*зроблено тіні карток сотрудників*/
-.shadow{
+.employees_shadow{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 
-.employees-link:hover,
-.employees-link:focus,
-.footer-link:hover,
-.footer-link:focus{
-  color:#FFFFFF;
-  background-color: #2196f3;
-  
-}
-.icon-distnce-employees{
+
+.employees_icon-distnce{
 display: flex;
 gap:10px;
 }
@@ -629,6 +629,11 @@ color: #FFFFFF;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   }
+  .footer-link:hover,
+  .footer-link:focus{
+  color:#FFFFFF;
+  background-color: #2196f3;
+}
   .icon-footer{
    display: flex;
    justify-content: center;
@@ -876,7 +881,6 @@ border:transparent;
 
     /* нИЗ форми*/
 
-.label-chekbox{}
 
 .checkbox{
   appearance: none;

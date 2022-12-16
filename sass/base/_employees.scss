@@ -1,0 +1,93 @@
+.employees{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    }
+  .employees_title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  }
+  
+  .employees_img{
+  display: flex;
+  justify-content: space-between;
+  }
+  .section_fourth{
+   background:var(--section-fon-third) ;
+  }
+  .employees_title{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(19 / 16);
+        
+      
+        letter-spacing: 0.03em;
+        
+        color: #212121;
+  }
+  .employees_our{
+    display: flex;
+    justify-content: space-around;
+    
+  
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+  }
+  
+  .employees_distance{
+   padding-top: 30px;
+   padding-bottom: 30px;
+   background: #FFFFFF;
+   border-radius: 0px 0px 4px 4px;
+  }
+      /*Робота з іконами :)*/
+  .employees_list{
+   display:flex;
+   justify-content: center;
+   margin-top: 16px;
+   
+  }
+  .employees_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #AFB1B8;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+   &_link:hover
+   &_link:focus{
+    color:#FFFFFF;
+    background-color: #2196f3;
+    }
+  
+  }
+  .employees--icon-card{
+    fill:currentColor;
+    }
+                      /*зроблено тіні карток сотрудників*/
+  .employees_shadow{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  }
+  
+  
+  .employees_icon-distnce{
+  display: flex;
+  gap:10px;
+  }
