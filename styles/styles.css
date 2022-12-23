@@ -481,14 +481,15 @@ background-color: #FFFFFF;
 border-radius: 50%;
 transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.employees_link:hover,
+.emploees_link:hover,
 .employees_link:focus{
   color:#FFFFFF;
-  background-color: #2196f3;
+  background-color:#2196f3;
   }
 
-}
+
 .employees--icon-card{
   fill:currentColor;
   }
