@@ -5,14 +5,14 @@
   }
  
   
-  .work_list{
+  .work__list{
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
   padding-left: 0px;
   }
   
-  .work_img{
+  .work__img{
     display:flex;
     justify-content: center;
     align-items:flex-end;
@@ -21,7 +21,7 @@
        /*Робота з текст з фоном спозиційований поверх зображення*/
   
   
-  .work_text{
+  .work__text{
   
     display: flex;
     align-items: center;

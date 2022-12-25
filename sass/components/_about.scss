@@ -3,30 +3,30 @@
     display: flex;
     }
     
-    .about_list{
+    .about__list{
     display: flex;
     align-items: flex-start;
     gap:30px;
     padding-left: 0px;
     }
     
-    .section_about{
+    .section__about{
     padding-top: 94px;
     padding-bottom: 0px;
     }
     
-    .about_content{
+    .about__content{
     
     padding-left: 0px;
     }
     
     
     
-    .about_header_content:last-child{
+    .about__header-content:last-child{
         margin-right: 0px;
       }
     
-    .abuot_title{
+    .abuot__title{
       font-weight: 700;
       font-size: 14px;
       line-height: calc(16 / 14);
@@ -36,18 +36,18 @@
       color: #212121;
     }
     
-    .about_advanteg_our{
+    .about__advanteg_our{
       font-size: 14px;
       line-height: calc(24 / 14);
        letter-spacing: 0.03em;
       color: #757575;
     }
     
-    .about_header{
+    .about__header{
       margin-bottom:10px;
     }
          /* Робота з іконами :) */
-    .about_icon{
+    .about__icon{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,7 +57,7 @@
       background: #F5F4FA;
     border-radius: 4px;
     }
-    .about_icon_fill{
+    .about__icon-fill{
     width: 70px;
     height: 70px;
     }

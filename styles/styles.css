@@ -296,51 +296,50 @@ background-size: cover;
 display: flex;
 }
 
-.about-list{
+.about__list{
 display: flex;
 align-items: flex-start;
 gap:30px;
 padding-left: 0px;
 }
 
-.section-about{
+.section__about{
 padding-top: 94px;
 padding-bottom: 0px;
 }
 
-.about-content{
+.about__content{
 
 padding-left: 0px;
 }
 
 
 
-.about-header-content:last-child{
+.about__header-content:last-child{
     margin-right: 0px;
   }
 
-.abuot-title{
+.abuot__title{
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  
   color: #212121;
 }
 
-.about-content{
+.about__content{
   font-size: 14px;
   line-height: calc(24 / 14);
    letter-spacing: 0.03em;
   color: #757575;
 }
 
-.about-list{
+.about__list{
   margin-bottom:10px;
 }
      /* Робота з іконами :) */
-.about-icon{
+.about__icon{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,7 +349,7 @@ padding-left: 0px;
   background: #F5F4FA;
 border-radius: 4px;
 }
-.about-icon_fill{
+.about__icon-fill{
 width: 70px;
 height: 70px;
 }
@@ -366,14 +365,14 @@ height: 70px;
 }
   
 
-.work_list{
+.work__list{
 display: flex;
 justify-content: space-between;
 margin-top: 50px;
 padding-left: 0px;
 }
 
-.work_img{
+.work__img{
   display:flex;
   justify-content: center;
   align-items:flex-end;
@@ -382,7 +381,7 @@ padding-left: 0px;
      /*Робота з текст з фоном спозиційований поверх зображення*/
 
 
-.work_text{
+.work__text{
 
   display: flex;
   align-items: center;
@@ -415,20 +414,20 @@ color: #FFFFFF;
   margin: 0 auto;
   padding: 0 15px;
   }
-.employees_title{
+.employees__title{
 display: flex;
 align-items: center;
 margin-bottom: 50px;
 }
 
-.employees_img{
+.employees__img{
 display: flex;
 justify-content: space-between;
 }
-.section_fourth{
+.section__fourth{
  background:var(--section-fon-third) ;
 }
-.employees_title{
+.employees__title{
       display: flex;
       justify-content: space-around;
       margin-bottom: 10px;
@@ -443,7 +442,7 @@ justify-content: space-between;
       
       color: #212121;
 }
-.employees_our{
+.employees__our{
   display: flex;
   justify-content: space-around;
   
@@ -457,20 +456,20 @@ justify-content: space-between;
   color: #757575;
 }
 
-.employees_distance{
+.employees__distance{
  padding-top: 30px;
  padding-bottom: 30px;
  background: #FFFFFF;
  border-radius: 0px 0px 4px 4px;
 }
     /*Робота з іконами :)*/
-.employees_list{
+.employees__list{
  display:flex;
  justify-content: center;
  margin-top: 16px;
  
 }
-.employees_link{
+.employees__link{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -483,34 +482,36 @@ transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.emploees_link:hover,
-.employees_link:focus{
+.employees__link:hover,
+.employees__link:focus{
   color:#FFFFFF;
   background-color:#2196f3;
   }
 
 
-.employees--icon-card{
+
+.employees__icon-card{
   fill:currentColor;
   }
                     /*зроблено тіні карток сотрудників*/
-.employees_shadow{
+.employees__shadow{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 
 
-.employees_icon-distnce{
+.employees__icon-distnce{
 display: flex;
 gap:10px;
 }
 
      /*Додав секцію та ікони - Постійні клієнти*/
 
-     .section_title{
+ .section__title{
       display:flex;
       margin-bottom: 50px;
       justify-content: center;
+
     
       font-family:var(--second-font);
       font-weight: 700;
@@ -523,6 +524,7 @@ gap:10px;
     } 
 
 .client-distance{
+  display: flex;
  gap:30px;
 }
 .client-link{

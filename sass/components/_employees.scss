@@ -3,20 +3,20 @@
     margin: 0 auto;
     padding: 0 15px;
     }
-  .employees_title{
+  .employees__title{
   display: flex;
   align-items: center;
   margin-bottom: 50px;
   }
   
-  .employees_img{
+  .employees__img{
   display: flex;
   justify-content: space-between;
   }
-  .section_fourth{
+  .section__fourth{
    background:var(--section-fon-third) ;
   }
-  .employees_title{
+  .employees__title{
         display: flex;
         justify-content: space-around;
         margin-bottom: 10px;
@@ -31,7 +31,7 @@
         
         color: #212121;
   }
-  .employees_our{
+  .employees__our{
     display: flex;
     justify-content: space-around;
     
@@ -45,20 +45,20 @@
     color: #757575;
   }
   
-  .employees_distance{
+  .employees__distance{
    padding-top: 30px;
    padding-bottom: 30px;
    background: #FFFFFF;
    border-radius: 0px 0px 4px 4px;
   }
       /*Робота з іконами :)*/
-  .employees_list{
+  .employees__list{
    display:flex;
    justify-content: center;
    margin-top: 16px;
    
   }
-  .employees_link{
+  .employees__link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,24 +70,27 @@
   transition-duration:250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-   &_link:hover
-   &_link:focus{
-    color:#FFFFFF;
-    background-color: #2196f3;
-    }
   
-  }
-  .employees--icon-card{
+  &:hover,
+  &:focus{
+    color:#FFFFFF;
+    background-color:#2196f3;
+    }
+}
+  
+  
+  
+  .employees__icon-card{
     fill:currentColor;
     }
                       /*зроблено тіні карток сотрудників*/
-  .employees_shadow{
+  .employees__shadow{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   }
   
   
-  .employees_icon-distnce{
+  .employees__icon-distnce{
   display: flex;
   gap:10px;
   }
