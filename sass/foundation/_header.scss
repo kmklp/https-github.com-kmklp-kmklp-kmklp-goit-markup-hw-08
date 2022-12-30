@@ -1,0 +1,81 @@
+.header{
+    display: flex;
+    align-items: center;
+    }
+    
+    .header__line{
+      border-bottom: 1px solid #ECECEC;
+    }
+    
+    .header__list{
+      display: flex;
+      align-items: center;
+    }
+    .header__nav{
+        margin-left: 93px;
+        padding-right:auto;
+        }
+        
+     .header__nav-item:not( :last-child) {
+        margin-right: 50px;
+        }
+             
+             /*додав в header-nav-link лінію з низу при ховері*/
+     .header__nav-link{
+          display: inline-flex;
+          position: relative;
+          padding: 24px 0px;
+          
+        
+          font-family: var( --second-font);
+          font-weight: 500;
+          line-height: calc(16 / 14);
+          letter-spacing: 0.02em;
+           color: #212121;
+        }                         
+        
+        /* розмитка для тел и пошти*/
+        
+        .header__list-item{
+        margin-right: 0;
+        margin-left:auto;
+        }
+        
+        .header__nav-mail{
+          display: flex;
+          padding: 24px 0px;
+          font-family: var( --second-font);
+        font-weight: 500;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        
+        color:#757575;
+        }
+         
+        .header__nav-tel{
+          display: flex;
+          margin-left: 50px;
+          padding: 24px 0px;
+        
+          font-family: var( --second-font);
+          font-weight: 500;
+          line-height: calc(16 / 14);
+          letter-spacing: 0.02em;
+          
+          color: #757575;
+        }
+        
+
+       .header__icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#757575 ;
+    margin-right: 10px;
+        }
+  
+         .header__icon{
+    display: flex;
+    color:currentColor;
+  
+         }
