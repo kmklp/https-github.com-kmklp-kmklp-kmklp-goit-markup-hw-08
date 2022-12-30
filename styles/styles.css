@@ -76,10 +76,9 @@ color:#2196F3;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  
 }
 
-.header-container{
+.header{
 display: flex;
 align-items: center;
 }
@@ -88,20 +87,16 @@ align-items: center;
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-list{
+.header__list{
   display: flex;
   align-items: center;
 }
 
 .section{
   padding: 94px 0px;
-
 }
 
-
-
-
-.logo-link{
+.logo{
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -113,15 +108,21 @@ font-weight: 700;
 font-size: 26px;
 line-height: calc(16 / 14);
 }
-.logo-color-first{
+.logo__color-first{
 color:#2196f3;
 }
-.logo-color-second{
+.logo__color-second{
 color:#000000 ;
 }
-.logo-colorsecond-footer{
+.logo__colorsecond-footer{
  color:#FFFFFF;
 }
+.logo__footer{
+  display: flex;
+  padding: 0px 0px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  }
       /*розмитка для nav*/
 .list-nav{
 margin-left: 93px;
@@ -157,12 +158,7 @@ background: #2196F3;
 border-radius: 2px;
 }
 
-
-
-
-
-
-      /* розмитка для тел и пошти*/
+/* розмитка для тел и пошти*/
 .list-item{
 margin-right: 0;
 margin-left:auto;
@@ -563,13 +559,7 @@ display:flex;
 padding-left: 0px;
 flex-direction: column;
 }
-.logo-footer{
-display: flex;
-padding: 0px 0px;
-margin-bottom: 20px;
-margin-right: 0px;
 
-}
 .footer{
  background:var(--section-fon-second);
  padding: 60px 0px;
