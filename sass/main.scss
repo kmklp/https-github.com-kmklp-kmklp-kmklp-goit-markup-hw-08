@@ -1,0 +1,19 @@
+    //utils
+@import 'utils/vars' ;
+    // base
+@import 'base/base' ;
+@import 'base/selector.tag' ;
+  //foundation
+@import 'foundation/header' ;
+@import 'foundation/hero' ;
+@import 'foundation/about' ;
+@import 'foundation/work' ;
+@import 'foundation/employees' ;
+@import 'foundation/client' ;
+@import 'foundation/footer' ;
+   //components
+@import 'components/active-link' ;
+@import 'components/section__title' ;
+@import 'components/section__fourth' ;
+@import 'components/logo' ;
+@import 'components/modal' ;
