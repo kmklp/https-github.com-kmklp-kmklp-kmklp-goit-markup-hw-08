@@ -1,6 +1,11 @@
-.about{
+ 
+    .section__about{
+    padding-top: 94px;
+    padding-bottom: 0px;
+    }
 
-    display: flex;
+.about{
+   display: flex;
     }
     
     .about__list{
@@ -9,18 +14,10 @@
     gap:30px;
     padding-left: 0px;
     }
-    
-    .section__about{
-    padding-top: 94px;
-    padding-bottom: 0px;
-    }
-    
+   
     .about__content{
-    
     padding-left: 0px;
     }
-    
-    
     
     .about__header-content:last-child{
         margin-right: 0px;
