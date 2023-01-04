@@ -1,19 +1,21 @@
  
     .section__about{
-    padding-top: 94px;
-    padding-bottom: 0px;
-    }
+      padding-top: 94px;
+      padding-bottom: 0px;
+      }
 
-.about{
-   display: flex;
+     .about{
+    display: flex;
     }
     
     .about__list{
-    display: flex;
+      display: flex;
     align-items: flex-start;
     gap:30px;
     padding-left: 0px;
     }
+
+    
    
     .about__content{
     padding-left: 0px;
@@ -32,8 +34,7 @@
       
       color: #212121;
     }
-    
-    .about__advanteg_our{
+        .about__advanteg_our{
       font-size: 14px;
       line-height: calc(24 / 14);
        letter-spacing: 0.03em;
