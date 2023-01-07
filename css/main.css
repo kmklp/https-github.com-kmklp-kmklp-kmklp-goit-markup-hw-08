@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 0 15px;
 }
 @media screen and (min-widht: 480px) {
@@ -53,7 +53,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -268,13 +268,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .about__section {
   padding-top: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .about__section {
     padding-top: 60px;
     padding-bottom: 0px;
@@ -294,37 +297,28 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 30px;
   padding-left: 0px;
   margin-bottom: 10px;
-  /* Робота з іконами :) */
-  /*робота з текстом*/
 }
 .about__list:last-child {
   margin-right: 0px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .about__list {
     display: block;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .about__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 30px;
-    padding-left: 0px;
-    margin-bottom: 10px;
-  }
-  .about__list:last-child {
-    margin-right: 0px;
+    /* gap: 30px;*/
   }
 }
-.about__list .about__icon {
+
+/* Робота з іконами :) */
+.about__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,37 +334,57 @@ a {
   background: #F5F4FA;
   border-radius: 4px;
 }
-@media screen and (max-width: 480px) {
-  .about__list .about__icon {
+@media screen and (max-width: 767px) {
+  .about__icon {
     width: 450px;
   }
 }
-@media screen and (min-width: 767px) {
-  .about__list .about__icon {
+@media screen and (min-width: 768px) {
+  .about__icon {
     width: 354px;
   }
 }
-@media screen and (min-width: 1199px) {
-  .about__list .about__icon {
+@media screen and (min-width: 1200px) {
+  .about__icon {
     width: 270px;
   }
 }
-.about__list .about__icon-fill {
+
+.about__icon-fill {
   width: 70px;
   height: 70px;
 }
-.about__list .about__content {
+
+.about__content {
   padding-left: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
-@media screen and (max-width: 480px) {
-  .about__list .about__content {
+@media screen and (max-width: 767px) {
+  .about__content {
     margin-bottom: 30px;
   }
 }
-.about__list .about__header-content:last-child {
+@media screen and (min-width: 768px) {
+  .about__content {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__content {
+    width: 270px;
+  }
+}
+
+.about__header-content:last-child {
   margin-right: 0px;
 }
-.about__list .abuot__title {
+
+/*робота з текстом*/
+.abuot__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -378,11 +392,12 @@ a {
   text-transform: uppercase;
   color: #212121;
 }
-.about__list .about__header {
+
+.about__header {
   margin-bottom: 10px;
 }
-@media screen and (max-width: 480px) {
-  .about__list .about__header {
+@media screen and (max-width: 767px) {
+  .about__header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -390,13 +405,6 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-.about__list .about__advanteg-our {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .work {
