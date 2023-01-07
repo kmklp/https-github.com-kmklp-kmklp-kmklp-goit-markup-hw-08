@@ -15,27 +15,6 @@ body {
   background: var(--colorfont-hiro);
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-@media screen and (min-widht: 480px) {
-  .container {
-    width: 450px;
-  }
-}
-@media screen and (min-widht: 768px) {
-  .container {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
 .section {
   padding: 94px 0px;
 }
@@ -56,6 +35,26 @@ body {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-widht: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-widht: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 html {
@@ -275,7 +274,7 @@ a {
   padding-top: 60px;
   padding-bottom: 0px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about__section {
     padding-top: 60px;
     padding-bottom: 0px;
@@ -289,26 +288,27 @@ a {
 }
 
 .about__list {
-  display: block;
-  /*align-items: flex-start;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 30px;
   padding-left: 0px;
+  margin-bottom: 10px;
+  /* Робота з іконами :) */
+  /*робота з текстом*/
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+.about__list:last-child {
+  margin-right: 0px;
+}
+@media screen and (max-width: 480px) {
   .about__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-    padding-left: 0px;
+    display: block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
   .about__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -318,11 +318,13 @@ a {
             align-items: flex-start;
     gap: 30px;
     padding-left: 0px;
+    margin-bottom: 10px;
+  }
+  .about__list:last-child {
+    margin-right: 0px;
   }
 }
-
-/* Робота з іконами :) */
-.about__icon {
+.about__list .about__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,75 +334,43 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background: #F5F4FA;
   border-radius: 4px;
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .about__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 354px;
-    height: 120px;
-    margin-bottom: 30px;
-    background: #F5F4FA;
-    border-radius: 4px;
-  }
-  .about__icon .about__advanteg-our {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 354px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142857143;
-    letter-spacing: 0.03em;
-    color: #757575;
+@media screen and (max-width: 480px) {
+  .about__list .about__icon {
+    width: 450px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .about__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media screen and (min-width: 767px) {
+  .about__list .about__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .about__list .about__icon {
     width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background: #F5F4FA;
-    border-radius: 4px;
   }
 }
-
-.about__icon-fill {
+.about__list .about__icon-fill {
   width: 70px;
   height: 70px;
 }
-
-.about__content {
+.about__list .about__content {
   padding-left: 0px;
 }
-
-.about__header-content:last-child {
+@media screen and (max-width: 480px) {
+  .about__list .about__content {
+    margin-bottom: 30px;
+  }
+}
+.about__list .about__header-content:last-child {
   margin-right: 0px;
 }
-
-/*робота з текстом*/
-.abuot__title {
+.about__list .abuot__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -408,12 +378,20 @@ a {
   text-transform: uppercase;
   color: #212121;
 }
-
-.about__header {
+.about__list .about__header {
   margin-bottom: 10px;
 }
-
-.bout__advanteg-our {
+@media screen and (max-width: 480px) {
+  .about__list .about__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.about__list .about__advanteg-our {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
