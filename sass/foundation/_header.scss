@@ -10,7 +10,12 @@
     .header__list{
       display: flex;
       align-items: center;
+
+      @media screen and (max-width:767px){
+        display: none;
+      }
     }
+
     .header__nav{
         margin-left: 93px;
         padding-right:auto;
