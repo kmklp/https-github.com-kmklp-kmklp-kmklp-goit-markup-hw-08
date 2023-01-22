@@ -44,7 +44,7 @@ body {
 
 .container {
   margin: 0px auto;
-  padding: 0 15px;
+  padding: 0px 15px;
 }
 @media screen and (min-widht: 480px) {
   .container {
@@ -119,6 +119,12 @@ a {
   margin-left: 93px;
   padding-right: auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__nav {
+    margin-left: 88px;
+    padding-right: auto;
+  }
+}
 
 .header__nav-item:not(:last-child) {
   margin-right: 50px;
@@ -143,6 +149,12 @@ a {
   margin-right: 0;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__list-item {
+    display: block;
+    margin-left: auto;
+  }
+}
 
 .header__nav-mail {
   display: -webkit-box;
@@ -154,6 +166,11 @@ a {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__nav-mail {
+    padding: 5px 0px;
+  }
 }
 
 .header__nav-tel {
@@ -167,6 +184,12 @@ a {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__nav-tel {
+    margin-left: auto;
+    padding: 5px 0px;
+  }
 }
 
 .header__icon-link {
@@ -284,12 +307,12 @@ a {
 }
 
 .about__section {
-  padding-top: 60px;
+  padding-top: 0px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .about__section {
-    padding-top: 60px;
+    padding-top: 0px;
     padding-bottom: 0px;
   }
 }
@@ -1206,8 +1229,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+   margin: 0;*/
   list-style: none;
 }
 
@@ -1240,6 +1263,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -1255,7 +1279,11 @@ a {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  color: #2196f3;
+}
+
+.menu-icon {
+  fill: currentColor;
 }
 
 .menu-container {
@@ -1264,15 +1292,26 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 0px;
+  margin: 0px;
   z-index: 999;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 40px;
 }
 
 .menu-container.is-open {
@@ -1284,18 +1323,89 @@ a {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  /*color: #fff;*/
 }
 
-.mobile-menu {
+.menu-text {
+  display: block;
   padding: 0;
   margin: 0;
+  margin-bottom: auto;
   list-style: none;
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
+.menu-distance:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-text-item .link {
+  /*color: #fff;*/
   text-decoration: none;
+}
+
+.mobile-menu-contact {
+  padding: 0;
+  margin-bottom: 64px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-text-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  display: block;
+  color: #212121;
+}
+
+/*.margin:last-child{
+margin-bottom: 0px;
+}
+.margin-none{
+margin-bottom: 0px;
+}*/
+.menu-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 32px;
+  color: #2196F3;
+}
+
+.menu-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  /*color: #fff;*/
+  text-decoration: none;
+  list-style: none;
+  gap: 20px;
+}
+
+.mobile-menu-social:last-child {
+  margin-right: 0;
+}
+
+.active {
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */

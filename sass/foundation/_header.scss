@@ -19,6 +19,11 @@
     .header__nav{
         margin-left: 93px;
         padding-right:auto;
+
+        @media screen and (min-width:768px) and (max-width:1199px){
+          margin-left: 88px;
+        padding-right:auto;
+        }
         }
         
      .header__nav-item:not( :last-child) {
@@ -44,6 +49,11 @@
         .header__list-item{
         margin-right: 0;
         margin-left:auto;
+
+        @media screen and (min-width:768px) and (max-width:1199px){ 
+         display: block;
+         margin-left: auto; 
+        }
         }
         
         .header__nav-mail{
@@ -55,6 +65,10 @@
         letter-spacing: 0.02em;
         
         color:#757575;
+
+        @media screen and(min-width:768px) and (max-width:1199px){
+          padding: 5px 0px;
+        }
         }
          
         .header__nav-tel{
@@ -68,6 +82,11 @@
           letter-spacing: 0.02em;
           
           color: #757575;
+
+          @media screen and(min-width:768px) and (max-width:1199px){
+            margin-left: auto ;
+            padding: 5px 0px;
+          }
         }
         
 

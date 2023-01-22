@@ -58,32 +58,15 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
+          <svg class="menu-icon" width="24" height="24">
+             <use href="./img/icons/icomoon-boorger menu/symbol-defs.svg#icon-menu_24px"></use>
+            </svg>
         </button>
-        <ul class="menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
-          </ul>
-        
-    </div>
+      </div>
     </header>
              
     <main>
-            <!-- секці 1,Hero--
+            <!-- секці 1,Hero-->
     <section class="hero hero__gradient">
         <div class="container ">
         <h1 class="hero__title">
@@ -553,12 +536,26 @@
               </svg>
             </button>
       
-            <ul class="mobile-menu">
-              <li><a href="" class="link">About</a></li>
-              <li><a href="" class="link">Products</a></li>
-              <li><a href="" class="link">Contacts</a></li>
-              <li><a href="" class="link">Career</a></li>
-            </ul>
+            <ul class="menu-text">
+              <li class="menu-distance">
+                <a href="" class="link menu-text-item active">Студія</a></li>
+              <li class="menu-distance">
+                <a href="" class="link menu-text-item ">Портфолио</a></li>
+              <li class="menu-distance">
+                <a href="" class="link menu-text-item ">Контакти</a></li>
+            </ul >
+            
+             <ul class="mobile-menu-contact">
+                <li><a href="" class="link menu-tel">+38 096 111 11 11</a></li>
+                <li><a href="" class="link menu-mail">info@devstudio.com</a></li>
+             </ul>
+             <ul class="mobile-menu-social">
+                <li><a href="" class="link menu-social">Instagram</a></li>
+                <li><a href="" class="link menu-social">Twitter</a></li>
+                <li><a href="" class="link menu-social">Facebook</a></li>
+                <li><a href="" class="link menu-social">Linkedin</a></li>
+             </ul>
+          
           </div>
     <script src="./js/modal js"></script>
 
@@ -568,6 +565,6 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"
       ></script>
-      <script defer src="js/mobile-menu.js"></script>
+      <script defer src="./js/mobile-menu.js"></script>
 </body> 
 </html>
