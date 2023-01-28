@@ -11,4 +11,8 @@
     letter-spacing: 0.03em;
     
     color:var(--colorfont-section-title);
+
+    @media screen and(max-width:480px){
+      margin-bottom: 30px;
+    }
   } 
