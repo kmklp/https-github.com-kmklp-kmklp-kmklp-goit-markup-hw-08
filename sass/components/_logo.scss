@@ -9,7 +9,10 @@
   font-weight: 700;
   font-size: 26px;
   line-height: calc(16 / 14);
-  }
+
+  @media screen and (max-width:767px){
+    padding-left: auto;
+  }}
   .logo__color-first{
   color:#2196f3;
   }

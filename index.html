@@ -73,9 +73,9 @@
             Ефективні рішення для<br> вашого бізнесу
         </h1>
       <button class="hero__btn" type="button" data-modal-open >замовити послугу</button>
-    </section>-->
+    </section>
     
-          <!--секція 2, about -->
+          <!-- секція 2, about -->
     <section class="about__section about">
     <div class="container">
        <h2 hidden>наши переваги</h2>
@@ -164,7 +164,19 @@
      
         <ul class="list employees__img">
             <li class="employees__shadow ">
-                <img src="./img/img4.jpg" alt="наш сотрудник Ігор Дем'яненко" width="270">
+                <img 
+                srcset="
+                ./img/employees/img-1_lg@1x.jpg 450w,
+                ./img/employees/img-1_lg@2x.jpg 900w,
+                ./img/employees/img-1_md@1x.jpg 354w,
+                ./img/employees/img-1_md@2x.jpg 708w,
+                ./img/employees/img-1_sm@1x.jpg 270w,
+                ./img/employees/img-1_sm@2x.jpg 540w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./img/employees/img-1_lg@1x.jpg"
+              alt="наш сотрудник Ігор Дем'яненко"/>
+
                <div class="employees__distance">
                  <h3 class="employees__title">Ігор Дем'яненко</h3>
                  <p class="employees__our">Product Designer</p>
@@ -173,7 +185,7 @@
                   <ul class="list employees__list employees__icon-distnce">
                     <li>
                         <a class="employees__link"
-                            href=".//instagram" target="blank"  rel="nofollow noreferrer noopener" aria-label="instagram">
+                            href="https://www.instagram.com/art_color_kiev/" target="blank"  rel="nofollow noreferrer noopener" aria-label="instagram">
                             <svg class="employees__icon-card" width="20" height="20">
                                 <use href="./img/icons/iconmoon-team card/image (1).svg#icon-instagram-2"></use>
                             </svg>
@@ -206,7 +218,19 @@
                   </ul>
                 </div>
             </li>
-            <li class="employees__shadow"><img src="./img/img5.jpg" alt="наш сотрудник Ольга Рєпіна" width="270">
+            <li class="employees__shadow">
+                <img
+                srcset="
+                ./img/employees/img-2_lg@1x.jpg 450w,
+                ./img/employees/img-2_lg@2x.jpg 900w,
+                ./img/employees/img-2_md@1x.jpg 354w,
+                ./img/employees/img-2_md@2x.jpg 708w,
+                ./img/employees/img-2_sm@1x.jpg 270w,
+                ./img/employees/img-2_sm@2x.jpg 540w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./img/employees/img-2_lg@1x.jpg"
+                alt="наш сотрудник Ольга Рєпіна"/>
                 <div class="employees__distance">
                  <h3 class="employees__title">Ольга Рєпіна</h3>
                  <p class="employees__our">Frontend Developer</p>
@@ -246,7 +270,19 @@
                   </ul>
                 </div>
             </li>
-            <li class="employees__shadow"><img src="./img/img6.jpg" alt="наш сотрудник Микола Тарасов" width="270">
+            <li class="employees__shadow">
+                <img 
+                srcset="
+                ./img/employees/img-3_lg@1x.jpg 450w,
+                ./img/employees/img-3_lg@2x.jpg 900w,
+                ./img/employees/img-3_md@1x.jpg 354w,
+                ./img/employees/img-3_md@2x.jpg 708w,
+                ./img/employees/img-3_sm@1x.jpg 270w,
+                ./img/employees/img-3_sm@2x.jpg 540w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./img/employees/img-3_lg@1x.jpg"
+                alt="наш сотрудник Микола Тарасов" >
                 <div class="employees__distance">
                  <h3 class="employees__title">Микола Тарасов</h3>
                  <p class="employees__our">Marketing</p>
@@ -286,7 +322,19 @@
                   </ul>
                 </div>
             </li>
-            <li class="employees__shadow"><img src="./img/img7.jpg" alt="наш сотрудник Михайло Єрмаков" width="270"> 
+            <li class="employees__shadow">
+                <img 
+                srcset="
+                ./img/employees/img-4_lg@1x.jpg 450w,
+                ./img/employees/img-4_lg@2x.jpg 900w,
+                ./img/employees/img-4_md@1x.jpg 354w,
+                ./img/employees/img-4_md@2x.jpg 708w,
+                ./img/employees/img-4_sm@1x.jpg 270w,
+                ./img/employees/img-4_sm@2x.jpg 540w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./img/employees/img-4_lg@1x.jpg"
+                alt="наш сотрудник Михайло Єрмаков"> 
                 <div class="employees__distance">
                  <h3 class="employees__title">Михайло Єрмаков</h3>
                  <p class="employees__our"> UI Designer</p>
@@ -388,10 +436,10 @@
     </main>
                <!--Підвал з тегом adress-->
     <footer class="footer">
-    <div class="container footer__alignment">
-        <div class="footer__distance">
+    <div class="container footer__alignment footer__distance-block">
+        <div class="footer__distance ">
             <a href="index.html" class="logo link footer__logo">  <span class="logo__color-first link">Web</span><span class="logo__colorsecond-footer link">Studio</span> </a>
-         <div class="footer__distance-block">
+         
           <address class="footer__location footer__distance">
           <ul class="list footer__list footer__location">
             <li class="footer__adress-distance"><a href="#" class="footer__adress link">м. Київ, пр-т Лесі Українки, 26</a></li>
@@ -399,7 +447,7 @@
             <li class="footer__tel"><a href="tel:+380961111111" class="footer__nav link ">+38 096 111 11 11 </a></li>
           </ul>
           </address>
-         
+        </div>
          <div class="footer__icon-center footer__location footer__distance">
           <h3 class="footer__title">Приеднуйтесь</h3>
           <ul class="list footer__icons-distance">
@@ -436,9 +484,9 @@
                 </a>
             </li>
           </ul> 
-         </div>
         </div>
-     </div>
+        
+     
 
         <div class="footer__form ">
           <h3 class="footer__title">Підпишиться на розсилку</h3>
@@ -459,7 +507,7 @@
               
     
     </footer>
-          <!--Створюємо модальне вікно--
+          <!--Створюємо модальне вікно-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <a href="">
@@ -469,7 +517,7 @@
                 </svg>
             </button> 
             </a>
-                  <!--Створюю форми модального вікна-- 
+                  <!--Створюю форми модального вікна--> 
                   <p class="text__form">Залиште свої дані, ми вам передзвонимо</p>
             <form >
                 <div class="form">
@@ -518,9 +566,9 @@
                </div>
             </form>
         </div>
-    </div>--
+    </div>
       
-        --! Створюю mobile menu-->
+        <!-- Створюю mobile menu-->
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
               <svg
