@@ -134,8 +134,13 @@
        <ul class="list work__list"> 
           <li>
             <div class="work__img">
-             <img  src="./img/img1.jpg" alt="работа за компьютером" 
-           width="370">
+                <picture>
+                <source
+                media="(min-width: 1200px)"
+                 srcset="./img/work/img1_sm@1x.jpg , ./img/work/img1_sm@2x.jpg"
+                type="image/jpg"
+                alt="работа за компьютером" />
+               width="370"/>
            <p class="work__text">десктопні додатки</p>
         </div>
           </li>
