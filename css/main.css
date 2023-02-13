@@ -727,7 +727,7 @@ a {
           align-items: center;
 }
 
-.portfolio-btn-link {
+.portfolio__btn-link {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -747,13 +747,7 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-link:not(:last-child) {
-  margin-right: 8px;
-}
-
-.portfolio-btn-link:hover,
-.portfolio-btn-link:focus {
+.portfolio__btn-link:hover, .portfolio__btn-link:focus {
   color: #ffffff;
   background-color: #2196f3;
   border: 1px solid #eeeeee;
@@ -764,7 +758,11 @@ a {
   border-radius: 4px;
 }
 
-.portfolio_btn-list {
+.portfolio__btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio__btn-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,7 +772,7 @@ a {
   margin-bottom: 56px;
 }
 
-.portfolio-titles {
+.portfolio__titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,7 +786,7 @@ a {
   color: #212121;
 }
 
-.portfolio-item {
+.portfolio__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,7 +798,7 @@ a {
   color: #757575;
 }
 
-.list-content {
+.portfolio__list-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,8 +806,13 @@ a {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .portfolio__list-content {
+    display: block;
+  }
+}
 
-.content-item {
+.portfolio__content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,24 +823,24 @@ a {
   width: 370px;
 }
 
-.content-item:nth-child(3n) {
+.portfolio__content-item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.content-element {
+.portfolio__content-element {
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.shadow-portfolio:hover,
-.shadow-portfolio:focus {
+.portfolio__shadow:hover,
+.portfolio__shadow:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.shadow-portfolio {
+.portfolio__shadow {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -845,12 +848,12 @@ a {
 }
 
 /*робота з owerlay*/
-.box-overlay {
+.portfolio__box-overlay {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.portfolio__overlay {
   content: "";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,13 +876,13 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover-portfolio:hover .overlay,
-.hover-portfolio:focus .overlay {
+.portfolio__shift:hover .portfolio__overlay,
+.portfolio__shift:focus .portfolio__overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
 
-.overlay-text {
+.portfolio__overlay-text {
   position: absolute;
   font-family: "Roboto";
   font-style: normal;
