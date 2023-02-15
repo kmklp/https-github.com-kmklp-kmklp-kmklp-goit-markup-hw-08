@@ -1,12 +1,17 @@
 .portfolio {
   display: block;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
-.portfolio__box{
-@media screen and (max-width: 480px) {
-width: 320px;
+.portfolio__box {
+  @media screen and (max-width: 767px) {
+    display: block;
+    max-width: 320px;
+  }
 }
-}
+
 .portfolio__btn-link {
   padding: 6px 22px;
   font-family: inherit;
@@ -38,18 +43,17 @@ width: 320px;
   margin-right: 8px;
 }
 
-.portfolio__btn-list {
+/*.portfolio__btn-list {
   display: flex;
   justify-content: center;
   margin-bottom: 56px;
 
-  @media screen and (max-width: 480px) {
-    display: flex;
+  @media screen and (min-width: 767px) {
+    display: block;
     flex-wrap: wrap;
-    width: 320px;
-    margin-left: auto;
+    max-width: 320px;
   }
-}
+}*/
 
 .portfolio__titles {
   display: flex;
@@ -80,7 +84,7 @@ width: 320px;
   flex-wrap: wrap;
   gap: 30px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: block;
   }
 }
