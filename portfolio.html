@@ -77,7 +77,13 @@
             <li class="portfolio__content-item">
               <a href="" class="portfolio__shadow portfolio__shift">
                 <div class="portfolio__box-overlay">
-                  <img src="./img/img8.jpg" alt="дві жінки і чоловік" />
+                  <picture>
+                    <source
+                    media="(max-width:767px)"
+                    srcset="./img/portfolio/img-1_lg@1x.jpg 1x, ./img/portfolio/img-1_lg@2x.jpg 2x"/>
+                   <img 
+                    src="./img/portfolio/img-1_lg@1x.jpg" alt="дві жінки і чоловік"/>
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
