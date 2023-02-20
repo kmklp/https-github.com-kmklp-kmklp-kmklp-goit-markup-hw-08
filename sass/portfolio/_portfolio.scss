@@ -1,16 +1,23 @@
 .portfolio {
   display: block;
   align-items: center;
+
   @media screen and (max-width: 767px) {
     display: block;
+    
   }
 }
-.portfolio__box {
+/*.portfolio__box {
   @media screen and (max-width: 767px) {
-    display: block;
+    
     max-width: 320px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
   }
-}
+}*/
 
 .portfolio__btn-link {
   padding: 6px 22px;
@@ -39,22 +46,21 @@
     border-radius: 4px;
   }
 }
-.portfolio__btn:not(:last-child) {
+/*.portfolio__btn:not(:last-child) {
   margin-right: 8px;
-}
+}*/
 
-/*.portfolio__btn-list {
+.portfolio__btn-list {
   display: flex;
   justify-content: center;
   margin-bottom: 56px;
-
-  @media screen and (min-width: 767px) {
-    display: block;
+  gap:8px;
+  @media screen and (max-width: 767px) {
+     width: 320px;
+     display: flex;
+     justify-content: start;
     flex-wrap: wrap;
-    max-width: 320px;
-  }
-}*/
-
+  }}
 .portfolio__titles {
   display: flex;
   padding-left: 24px;
@@ -67,7 +73,6 @@
   letter-spacing: 0.06em;
   color: #212121;
 }
-
 .portfolio__item {
   display: flex;
   padding-left: 24px;
@@ -78,23 +83,23 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
-
 .portfolio__list-content {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
+@media screen and (max-width: 767px) {
+    gap: 30px;}
 }
-
 .portfolio__content-item {
   display: flex;
   flex-direction: column;
-  width: 370px;
+   @media screen and (max-width: 767px){
+  width: 450px;}
+  @media screen and (min-width: 768px){  
+  width: 354px;}
+   @media screen and (min-width: 1200px){  
+  width: 370px;}
 }
-
 .portfolio__content-item:nth-child(3n) {
   margin-right: 0px;
 }
@@ -102,8 +107,14 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
-  border-top: none;
-}
+    border-top: none;
+  }
+  .portfolio__padding-element{
+     @media screen and (min-width: 768px) and (max-width:1199px){
+  padding-bottom: 56px;}
+  }
+  
+
 
 .portfolio__shadow:hover,
 .portfolio__shadow:focus {
